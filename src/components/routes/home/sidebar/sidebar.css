@@ -1,0 +1,20 @@
+.list-group{
+    padding-top: 10px;
+    background: #3f0e40;    
+    padding-bottom: 10px;
+}
+
+.list-group-item{
+    background: #3f0e40;
+    color: white;
+    border: 0px solid transparent;
+    cursor: pointer;
+}
+
+.list-group-item:first-child{
+    border-radius: 0px;
+}
+
+.list-group-item:last-child{
+    border-radius: 0px;
+}

@@ -1,0 +1,30 @@
+.footerIMessage{
+    background: white;
+    padding: 15px;
+    border: 0px solid transparent; 
+}
+
+.footerIMessage input{
+    border: 2px solid silver;
+    padding: 20px;
+}
+
+.headerChat h1{
+    font-weight: bolder;
+    font-size: 20px;
+    color: #616061;
+}
+
+.headerChat h4{
+    font-weight: 200;
+    font-size: 15px;
+    color: gray;
+}
+
+.headerChat{
+    background: white;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid silver;
+}
