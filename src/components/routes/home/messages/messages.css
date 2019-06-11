@@ -6,7 +6,6 @@
 
 .footerIMessage input{
     border: 2px solid silver;
-    padding: 20px;
 }
 
 .headerChat h1{
@@ -27,4 +26,29 @@
     padding-top: 10px;
     padding-bottom: 5px;
     border-bottom: 2px solid silver;
+}
+
+/*Nombre de usuario*/
+.message-block h4{
+    font-size: 15px;
+    font-family: Ubuntu;
+}
+
+/*Mensaje*/
+.message-block h5{
+    font-size: 13px;    
+    font-family: Ubuntu;    
+    font-weight: 200;
+}
+
+/*Hora*/
+.message-block span{
+    font-size: 11px;
+    font-family: Ubuntu;    
+    font-weight: 200;
+    color: gray;    
+}
+
+.message-block{
+    overflow-y: scroll;
 }
