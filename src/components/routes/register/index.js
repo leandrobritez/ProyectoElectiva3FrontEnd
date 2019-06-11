@@ -78,7 +78,7 @@ class Register extends Component {
                     </Card.Body>
                 </Card>
                 <SockJsClient
-                    url='http://backendchat.herokuapp.com/chat-electiva'
+                    url='https://backendchat.herokuapp.com/chat-electiva'
                     topics={['/topic/register']}
                     ref={(client) => { this.clientRef = client }}
                     onConnect={console.log("Connection established!")}

@@ -16,7 +16,7 @@ class Home extends Component {
 
     getContactos(){
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "http://backendchat.herokuapp.com/usuario/contactos", false);
+        xhr.open("GET", "https://backendchat.herokuapp.com/usuario/contactos", false);
         xhr.send(null);
         var response = JSON.parse(xhr.responseText);
         console.log(response);
@@ -25,7 +25,7 @@ class Home extends Component {
 
     getMessages(contacto, usuarioId, contactoId){
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "http://backendchat.herokuapp.com/mensaje?usuario_id=" + usuarioId + "&contacto_id=" + contactoId, false);
+        xhr.open("GET", "https://backendchat.herokuapp.com/mensaje?usuario_id=" + usuarioId + "&contacto_id=" + contactoId, false);
         xhr.send(null);
         var response = JSON.parse(xhr.responseText);
         console.log(response);
@@ -108,7 +108,7 @@ class Home extends Component {
                     />
                 </section>
                 <SockJsClient
-                    url="http://backendchat.herokuapp.com/chat-electiva"
+                    url="https://backendchat.herokuapp.com/chat-electiva"
                     topics={["/topic/register", "/topic/mensaje"]}
                     ref={(client) => { this.clientRef = client }}
                     onConnect={console.log("Connection established!")}

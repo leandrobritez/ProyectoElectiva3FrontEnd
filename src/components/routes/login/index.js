@@ -17,7 +17,7 @@ class Login extends Component {
         e.preventDefault();
         var credenciales = { username: this.state.username, password: this.state.password };
         const { cookies } = this.props; const xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://backendchat.herokuapp.com/usuario/login", false);
+        xhr.open("POST", "https://backendchat.herokuapp.com/usuario/login", false);
         xhr.onreadystatechange = function(){
             if (xhr.readyState == 4 && xhr.status == 200) {
                 var response = xhr.responseText;
