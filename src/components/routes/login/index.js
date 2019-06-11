@@ -3,6 +3,7 @@ import { Card, Button, Form } from "react-bootstrap";
 import { instanceOf } from 'prop-types';
 import { withCookies, Cookies } from 'react-cookie';
 import Notifications, {notify} from 'react-notify-toast';
+import {URL_BACKEND} from "../../../core/opcionesApp";
 
 class Login extends Component {
 
@@ -17,7 +18,7 @@ class Login extends Component {
         e.preventDefault();
         var credenciales = { username: this.state.username, password: this.state.password };
         const { cookies } = this.props; const xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://backendchat.herokuapp.com/usuario/login", false);
+        xhr.open("POST", URL_BACKEND + "/usuario/login", false);
         xhr.onreadystatechange = function(){
             if (xhr.readyState == 4 && xhr.status == 200) {
                 var response = xhr.responseText;

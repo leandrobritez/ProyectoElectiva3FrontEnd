@@ -4,6 +4,7 @@ import SockJsClient from 'react-stomp';
 import { instanceOf } from 'prop-types';
 import { withCookies, Cookies } from 'react-cookie';
 import Notifications, {notify} from 'react-notify-toast';
+import {URL_BACKEND} from "../../../core/opcionesApp";
 
 class Register extends Component {
 
@@ -78,7 +79,7 @@ class Register extends Component {
                     </Card.Body>
                 </Card>
                 <SockJsClient
-                    url='https://backendchat.herokuapp.com/chat-electiva'
+                    url={URL_BACKEND + "/chat-electiva"}
                     topics={['/topic/register']}
                     ref={(client) => { this.clientRef = client }}
                     onConnect={console.log("Connection established!")}
